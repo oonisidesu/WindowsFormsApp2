@@ -28,21 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.IdLabel = new System.Windows.Forms.Label();
+            this.IdTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
+            // 
+            // IdLabel
+            // 
+            this.IdLabel.AutoSize = true;
+            this.IdLabel.Location = new System.Drawing.Point(49, 25);
+            this.IdLabel.Name = "IdLabel";
+            this.IdLabel.Size = new System.Drawing.Size(32, 24);
+            this.IdLabel.TabIndex = 0;
+            this.IdLabel.Text = "ID";
+            // 
+            // IdTextBox
+            // 
+            this.IdTextBox.Location = new System.Drawing.Point(156, 25);
+            this.IdTextBox.Name = "IdTextBox";
+            this.IdTextBox.Size = new System.Drawing.Size(180, 31);
+            this.IdTextBox.TabIndex = 1;
             // 
             // UserSaveForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.IdTextBox);
+            this.Controls.Add(this.IdLabel);
             this.Name = "UserSaveForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ユーザー登録";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label IdLabel;
+        private System.Windows.Forms.TextBox IdTextBox;
     }
 }
 

@@ -15,6 +15,21 @@ namespace WindowsFormsApp2
         public UserSaveForm()
         {
             InitializeComponent();
+
+            MailCheckBox.Enabled = true;
+
+            SetMailAddressTextBox();
+        }
+
+        private void MailCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            SetMailAddressTextBox();
+        }
+
+        private void SetMailAddressTextBox()
+        {
+            MailAddressTextBox.Enabled = MailCheckBox.Checked;
+            MailAddressLabel.Enabled = MailCheckBox.Checked;
         }
     }
 }

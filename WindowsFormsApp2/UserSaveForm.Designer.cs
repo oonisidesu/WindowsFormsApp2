@@ -36,6 +36,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.FreeRadioButton = new System.Windows.Forms.RadioButton();
             this.BusinessRadioButton = new System.Windows.Forms.RadioButton();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -115,11 +116,21 @@
             this.BusinessRadioButton.Text = "ビジネス";
             this.BusinessRadioButton.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(53, 373);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(183, 24);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "無制限で使えます";
+            // 
             // UserSaveForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.MailAddressTextBox);
             this.Controls.Add(this.MailAddressLabel);
@@ -146,6 +157,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton BusinessRadioButton;
         private System.Windows.Forms.RadioButton FreeRadioButton;
+        private System.Windows.Forms.Label label1;
     }
 }
 

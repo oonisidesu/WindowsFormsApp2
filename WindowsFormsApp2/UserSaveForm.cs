@@ -17,8 +17,9 @@ namespace WindowsFormsApp2
             InitializeComponent();
 
             MailCheckBox.Enabled = true;
-
+            FreeRadioButton.Checked = true;
             SetMailAddressTextBox();
+            PlanChenge();
         }
 
         private void MailCheckBox_CheckedChanged(object sender, EventArgs e)
@@ -30,6 +31,16 @@ namespace WindowsFormsApp2
         {
             MailAddressTextBox.Enabled = MailCheckBox.Checked;
             MailAddressLabel.Enabled = MailCheckBox.Checked;
+        }
+
+        private void BusinessRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            PlanChenge();
+        }
+
+        private void PlanChenge()
+        {
+            NoteLabel.Visible = BusinessRadioButton.Checked;
         }
     }
 }

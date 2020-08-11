@@ -16,6 +16,11 @@ namespace WindowsFormsApp2
         {
             InitializeComponent();
 
+            EnableComboBox.Items.Add("有効");
+            EnableComboBox.Items.Add("無効");
+            EnableComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            EnableComboBox.SelectedIndex = 0;
+
             MailCheckBox.Enabled = true;
             FreeRadioButton.Checked = true;
             SetMailAddressTextBox();

@@ -37,6 +37,7 @@
             this.BusinessRadioButton = new System.Windows.Forms.RadioButton();
             this.FreeRadioButton = new System.Windows.Forms.RadioButton();
             this.NoteLabel = new System.Windows.Forms.Label();
+            this.EnableComboBox = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -126,11 +127,20 @@
             this.NoteLabel.TabIndex = 6;
             this.NoteLabel.Text = "無制限で使えます";
             // 
+            // EnableComboBox
+            // 
+            this.EnableComboBox.FormattingEnabled = true;
+            this.EnableComboBox.Location = new System.Drawing.Point(57, 429);
+            this.EnableComboBox.Name = "EnableComboBox";
+            this.EnableComboBox.Size = new System.Drawing.Size(121, 32);
+            this.EnableComboBox.TabIndex = 7;
+            // 
             // UserSaveForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(782, 508);
+            this.Controls.Add(this.EnableComboBox);
             this.Controls.Add(this.NoteLabel);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.MailAddressTextBox);
@@ -159,6 +169,7 @@
         private System.Windows.Forms.RadioButton BusinessRadioButton;
         private System.Windows.Forms.RadioButton FreeRadioButton;
         private System.Windows.Forms.Label NoteLabel;
+        private System.Windows.Forms.ComboBox EnableComboBox;
     }
 }
 

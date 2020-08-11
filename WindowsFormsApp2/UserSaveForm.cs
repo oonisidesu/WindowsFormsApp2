@@ -47,5 +47,7 @@ namespace WindowsFormsApp2
         {
             NoteLabel.Visible = BusinessRadioButton.Checked;
         }
+
+
     }
 }

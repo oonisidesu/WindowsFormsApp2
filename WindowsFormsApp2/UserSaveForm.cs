@@ -52,5 +52,14 @@ namespace WindowsFormsApp2
         {
 
         }
+
+        private void SaveButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(
+                "保存しますか？", 
+                "確認", 
+                MessageBoxButtons.OKCancel,
+                MessageBoxIcon.Question);
+        }
     }
 }

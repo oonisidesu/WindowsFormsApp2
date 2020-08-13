@@ -39,8 +39,8 @@
             this.NoteLabel = new System.Windows.Forms.Label();
             this.EnableComboBox = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.CloseButton = new System.Windows.Forms.Button();
+            this.SaveButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -141,33 +141,34 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.CloseButton);
+            this.panel1.Controls.Add(this.SaveButton);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 557);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(782, 100);
             this.panel1.TabIndex = 8;
             // 
-            // button1
+            // CloseButton
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(256, 100);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.CloseButton.Dock = System.Windows.Forms.DockStyle.Left;
+            this.CloseButton.Location = new System.Drawing.Point(256, 0);
+            this.CloseButton.Name = "CloseButton";
+            this.CloseButton.Size = new System.Drawing.Size(290, 100);
+            this.CloseButton.TabIndex = 1;
+            this.CloseButton.Text = "閉じる";
+            this.CloseButton.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // SaveButton
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button2.Location = new System.Drawing.Point(256, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(290, 100);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.SaveButton.Dock = System.Windows.Forms.DockStyle.Left;
+            this.SaveButton.Location = new System.Drawing.Point(0, 0);
+            this.SaveButton.Name = "SaveButton";
+            this.SaveButton.Size = new System.Drawing.Size(256, 100);
+            this.SaveButton.TabIndex = 0;
+            this.SaveButton.Text = "保存";
+            this.SaveButton.UseVisualStyleBackColor = true;
+            this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
             // UserSaveForm
             // 
@@ -207,8 +208,8 @@
         private System.Windows.Forms.Label NoteLabel;
         private System.Windows.Forms.ComboBox EnableComboBox;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button CloseButton;
+        private System.Windows.Forms.Button SaveButton;
     }
 }
 

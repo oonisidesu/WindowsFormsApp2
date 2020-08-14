@@ -55,11 +55,20 @@ namespace WindowsFormsApp2
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(
+            DialogResult dialogResult = MessageBox.Show(
                 "保存しますか？", 
                 "確認", 
                 MessageBoxButtons.OKCancel,
                 MessageBoxIcon.Question);
+
+            if(dialogResult == DialogResult.OK)
+            {
+                MessageBox.Show("保存しました");
+            }
+            else
+            {
+                MessageBox.Show("キャンセルしました");
+            }
         }
     }
 }

@@ -16,6 +16,8 @@ namespace WindowsFormsApp2
         {
             InitializeComponent();
 
+            StatusLabel.Text = "必要事項を入力して保存してください";
+
             EnableComboBox.Items.Add("有効");
             EnableComboBox.Items.Add("無効");
             EnableComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
@@ -63,11 +65,11 @@ namespace WindowsFormsApp2
 
             if(dialogResult == DialogResult.OK)
             {
-                MessageBox.Show("保存しました");
+                StatusLabel.Text = "保存しました";
             }
             else
             {
-                MessageBox.Show("キャンセルしました");
+                StatusLabel.Text = "キャンセルしました";
             }
         }
     }

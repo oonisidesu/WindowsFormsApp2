@@ -72,5 +72,10 @@ namespace WindowsFormsApp2
                 StatusLabel.Text = "キャンセルしました";
             }
         }
+
+        private void CloseButton_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

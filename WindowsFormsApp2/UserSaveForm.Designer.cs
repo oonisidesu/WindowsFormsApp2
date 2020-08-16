@@ -161,6 +161,7 @@
             this.CloseButton.TabIndex = 1;
             this.CloseButton.Text = "閉じる";
             this.CloseButton.UseVisualStyleBackColor = true;
+            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
             // 
             // SaveButton
             // 

@@ -65,6 +65,13 @@ namespace WindowsFormsApp2
 
             if(dialogResult == DialogResult.OK)
             {
+                using (var sw =
+                    new System.IO.StreamWriter
+                    ("save.txt", true, Encoding.GetEncoding("shift-jis")))
+                {
+                    sw.WriteLine("AAAAA");
+                }
+
                 StatusLabel.Text = "保存しました";
             }
             else

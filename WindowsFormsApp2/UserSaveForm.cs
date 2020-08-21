@@ -67,7 +67,7 @@ namespace WindowsFormsApp2
             {
                 using (var sw =
                     new System.IO.StreamWriter
-                    ("save.txt", true, Encoding.GetEncoding("shift-jis")))
+                    (@"C:\work\save.txt", true, Encoding.GetEncoding("shift-jis")))
                 {
                     sw.WriteLine("AAAAA");
                 }

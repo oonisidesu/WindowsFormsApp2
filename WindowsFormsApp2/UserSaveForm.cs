@@ -69,7 +69,19 @@ namespace WindowsFormsApp2
                     new System.IO.StreamWriter
                     (@"D:\work\save.txt", true, Encoding.GetEncoding("shift-jis")))
                 {
-                    sw.WriteLine("AAAAA");
+                    sw.Write(IdTextBox.Text);
+                    sw.Write(MailCheckBox.Checked);
+                    sw.Write(MailAddressTextBox.Text);
+                    if (BusinessRadioButton.Checked)
+                    {
+                        sw.Write("1");
+                    }
+                    else 
+                    {
+                        sw.Write("0");
+                    }
+                    sw.Write(EnableComboBox.Text);
+                    sw.WriteLine("");
                 }
 
                 StatusLabel.Text = "保存しました";

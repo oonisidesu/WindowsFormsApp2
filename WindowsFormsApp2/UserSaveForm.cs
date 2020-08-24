@@ -67,11 +67,14 @@ namespace WindowsFormsApp2
             {
                 using (var sw =
                     new System.IO.StreamWriter
-                    (@"D:\work\save.txt", true, Encoding.GetEncoding("shift-jis")))
+                    (@"D:\work\save.csv", true, Encoding.GetEncoding("shift-jis")))
                 {
                     sw.Write(IdTextBox.Text);
+                    sw.Write(",");
                     sw.Write(MailCheckBox.Checked);
+                    sw.Write(",");
                     sw.Write(MailAddressTextBox.Text);
+                    sw.Write(",");
                     if (BusinessRadioButton.Checked)
                     {
                         sw.Write("1");
@@ -80,6 +83,7 @@ namespace WindowsFormsApp2
                     {
                         sw.Write("0");
                     }
+                    sw.Write(",");
                     sw.Write(EnableComboBox.Text);
                     sw.WriteLine("");
                 }

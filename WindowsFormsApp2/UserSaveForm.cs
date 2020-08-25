@@ -57,6 +57,36 @@ namespace WindowsFormsApp2
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
+            if(IdTextBox.Text.Trim().Length < 1)
+            {
+                MessageBox.Show("IDを入力してください",
+                    "警告",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                IdTextBox.Focus();
+                return;
+            }
+
+            if (IdTextBox.Text.Contains(",")) 
+            {
+                MessageBox.Show("IDにカンマは入力できません",
+                    "警告",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                IdTextBox.Focus();
+                return;
+            }
+
+            if (MailAddressTextBox.Text.Contains(","))
+            {
+                MessageBox.Show("メールアドレスにカンマは入力できません",
+                    "警告",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                MailAddressTextBox.Focus();
+                return;
+            }
+
             DialogResult dialogResult = MessageBox.Show(
                 "保存しますか？", 
                 "確認", 

@@ -69,7 +69,7 @@ namespace WindowsFormsApp2
 
             if (IdTextBox.Text.Contains(",")) 
             {
-                MessageBox.Show("IDにカンマは入力できません",
+                　MessageBox.Show("IDにカンマは入力できません",
                     "警告",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Warning);
